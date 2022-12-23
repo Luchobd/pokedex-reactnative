@@ -4,13 +4,13 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Icon from "react-native-vector-icons/FontAwesome5";
 
 import FavoriteScreen from "../screens/Favorite";
-import PokedexScreen from "../screens/Pokedex";
+// import PokedexScreen from "../screens/Pokedex";
 import AccountScreen from "../screens/Account";
 // import PokemonScreen from "../screens/Pokemon";
 
 // Este componente ya no se utiliza porque el componente de Tab.Screen ya lo hace tambien con solo actualizar sus options.
 // import FavoriteNavigation from "./FavoriteNavigation";
-// import PokedexNavigation from "./PokedexNavigation";
+import PokedexNavigation from "./PokedexNavigation";
 // import AccountNavigation from "./PokedexNavigation";
 
 import Account from "../screens/Account";
@@ -34,7 +34,7 @@ export default function Navigation() {
       />
       <Tab.Screen
         name="Pokedex"
-        component={PokedexScreen}
+        component={PokedexNavigation}
         options={{
           tabBarLabel: "",
           headerTitleAlign: "center",
